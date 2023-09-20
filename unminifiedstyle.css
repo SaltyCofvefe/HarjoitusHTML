@@ -1,0 +1,96 @@
+a,
+body {
+    color: #fff;
+}
+@keyframes borderAnimation {
+    0%,
+    100% {
+        border-color: red;
+    }
+    25% {
+        border-color: #00f;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: #ff0;
+    }
+}
+body {
+    background-image: url("aibackground.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: arial;
+    line-height: 1.4em;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+.clr {
+    clear: both;
+}
+#container {
+    border-radius: 5px;
+    background: #333;
+    width: 960px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 10px;
+    opacity: 99%;
+    border: 2px solid red;
+    animation: 4s infinite borderAnimation;
+}
+#nav,
+#sidebar,
+.opintojaksot a {
+    background: #666;
+}
+#nav {
+    height: 40px;
+}
+#nav ul {
+    padding-top: 13px;
+    padding-left: 10px;
+}
+#nav li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+}
+#nav .active {
+    font-weight: 700;
+    color: #000;
+}
+#main {
+    float: left;
+    width: 60%;
+}
+#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+    padding: 10px;
+}
+#footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+.opintojaksot li {
+    border-bottom: 2px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+.opintojaksot a {
+    padding: 10px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
